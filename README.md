@@ -5,10 +5,6 @@ JCS Kadupitiya, Geoffrey C. Fox, Vikram Jadhao | 2020
 
 * Paper: [https://arxiv.org/abs/2004.06493](https://arxiv.org/abs/2004.06493)
 
-![overall-idea](figures/fig2.jpg)
-
-![RNN-MD](figures/fig1.jpg)
-
 * Cite as:
 ```
 @misc{kadupitiya2020simulating,
@@ -20,3 +16,9 @@ JCS Kadupitiya, Geoffrey C. Fox, Vikram Jadhao | 2020
     primaryClass={physics.comp-ph}
 }
 ```
+
+* Overview of the deep learning approach
+![overall-idea](figures/fig2.jpg)
+
+* RNN-MD architecture
+![RNN-MD](figures/fig1.jpg)
