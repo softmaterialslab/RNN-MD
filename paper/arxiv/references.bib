@@ -1,0 +1,1569 @@
+% domain / critical ref
+ @INPROCEEDINGS{gcfref1,
+   title           = "Learning Everywhere: Pervasive Machine Learning for
+                      Effective {High-Performance} Computation",
+   booktitle       = "{HPDC} Workshop at {IPDPS} 2019",
+   author          = "{Geoffrey Fox, James A. Glazier, JCS Kadupitiya, Vikram
+                      Jadhao, Minje Kim, Judy Qiu, James P. Sluka, Endre
+                      Somogyi, Madhav Marathe, Abhijin Adiga, Jiangzhuo Chen,
+                      Oliver Beckstein, and Shantenu Jha}",
+   year            =  2019,
+   url             = "https://arxiv.org/abs/1902.10810,
+                      http://dsc.soic.indiana.edu/publications/Learning_Everywhere_Summary.pdf",
+   conference      = "HPDC Workshop at IPDPS",
+   location        = "Rio de Janeiro"
+ }
+
+ @INPROCEEDINGS{gcfref2,
+   title           = "Understanding {ML} driven {HPC}: Applications and
+                      Infrastructure",
+   booktitle       = "{IEEE} eScience 2019 Conference",
+   author          = "{Geoffrey Fox, Shantenu Jha}",
+   url             = "https://escience2019.sdsc.edu/",
+   conference      = "15th International Conference eScience 2019",
+   location        = "San Diego, California"
+ }
+ 
+ @INPROCEEDINGS{gcfref3,
+   title           = "Learning Everywhere: A Taxonomy for the Integration of
+                      Machine Learning and Simulations",
+   booktitle       = "{IEEE} eScience 2019 Conference",
+   author          = "{Geoffrey Fox, Shantenu Jha}",
+   url             = "https://escience2019.sdsc.edu/",
+   conference      = "15th International Conference eScience 2019",
+   year=2019,
+   location        = "San Diego, California",
+   note = "arXiv:1909.13340"
+ }
+ 
+ @ARTICLE{gcfref4,
+   title         = "Up to two billion times acceleration of scientific
+                    simulations with deep neural architecture search",
+   author        = "Kasim, M F and Watson-Parris, D and Deaconu, L and Oliver, S
+                    and Hatfield, P and Froula, D H and Gregori, G and Jarvis, M
+                    and Khatiwala, S and Korenaga, J and Topp-Mugglestone, J and
+                    Viezzer, E and Vinko, S M",
+   abstract      = "Computer simulations are invaluable tools for scientific
+                    discovery. However, accurate simulations are often slow to
+                    execute, which limits their applicability to extensive
+                    parameter exploration, large-scale data analysis, and
+                    uncertainty quantification. A promising route to accelerate
+                    simulations by building fast emulators with machine learning
+                    requires large training datasets, which can be prohibitively
+                    expensive to obtain with slow simulations. Here we present a
+                    method based on neural architecture search to build accurate
+                    emulators even with a limited number of training data. The
+                    method successfully accelerates simulations by up to 2
+                    billion times in 10 scientific cases including astrophysics,
+                    climate science, biogeochemistry, high energy density
+                    physics, fusion energy, and seismology, using the same
+                    super-architecture, algorithm, and hyperparameters. Our
+                    approach also inherently provides emulator uncertainty
+                    estimation, adding further confidence in their use. We
+                    anticipate this work will accelerate research involving
+                    expensive simulations, allow more extensive parameters
+                    exploration, and enable new, previously unfeasible
+                    computational discovery.",
+   month         =  "17~" # jan,
+   year          =  2020,
+   url           = "http://arxiv.org/abs/2001.08055",
+   archivePrefix = "arXiv",
+   eprint        = "2001.08055",
+   primaryClass  = "stat.ML",
+   arxivid       = "2001.08055"
+ }
+ 
+ 
+  @INPROCEEDINGS{gcfref5,
+    title           = "Machine learning for performance enhancement of molecular
+                       dynamics simulations",
+    booktitle       = "International Conference on Computational Science
+                       {ICCS2019}",
+    author          = "{JCS Kadupitiya , Geoffrey C. Fox , and Vikram Jadhao}",
+    institution     = "Indiana University",
+    year            =  2019,
+    url             = "http://dsc.soic.indiana.edu/publications/ICCS8.pdf",
+    conference      = " International Conference on Computational Science
+                       ICCS2019",
+    location        = " Faro, Algarve, Portugal"
+ }
+  @INPROCEEDINGS{gcfref6,
+    title     = "Benchmarking Deep Learning for Time Series: Challenges and
+                 Directions",
+    booktitle = "2019 {IEEE} International Conference on Big Data (Big Data)",
+    author    = "Huang, X and Fox, G C and Serebryakov, S and Mohan, A and
+                 Morkisz, P and Dutta, D",
+    abstract  = "Deep learning for time series is an emerging area with close
+                 ties to industry, yet under represented in performance
+                 benchmarks for machine learning systems. In this paper, we
+                 present a landscape of deep learning applications applied to
+                 time series, and discuss the challenges and directions towards
+                 building a robust performance benchmark of deep learning
+                 workloads for time series data.",
+    publisher = "ieeexplore.ieee.org",
+    pages     = "5679--5682",
+    month     =  dec,
+    year      =  2019,
+    url       = "http://dx.doi.org/10.1109/BigData47090.2019.9005496",
+    keywords  = "Time series analysis;Benchmark testing;Machine
+                 learning;Biological system modeling;Computational
+                 modeling;Electroencephalography;Brain modeling;machine
+                 learning;deep learning;time series;performance;benchmark",
+    doi       = "10.1109/BigData47090.2019.9005496"
+ }
+ 
+  @ARTICLE{gcfref7,
+    title         = "Sequence Transduction with Recurrent Neural Networks",
+    author        = "Graves, Alex",
+    abstract      = "Many machine learning tasks can be expressed as the
+                     transformation---or \textbackslashemph\{transduction\}---of
+                     input sequences into output sequences: speech recognition,
+                     machine translation, protein secondary structure prediction
+                     and text-to-speech to name but a few. One of the key
+                     challenges in sequence transduction is learning to represent
+                     both the input and output sequences in a way that is
+                     invariant to sequential distortions such as shrinking,
+                     stretching and translating. Recurrent neural networks (RNNs)
+                     are a powerful sequence learning architecture that has
+                     proven capable of learning such representations. However
+                     RNNs traditionally require a pre-defined alignment between
+                     the input and output sequences to perform transduction. This
+                     is a severe limitation since \textbackslashemph\{finding\}
+                     the alignment is the most difficult aspect of many sequence
+                     transduction problems. Indeed, even determining the length
+                     of the output sequence is often challenging. This paper
+                     introduces an end-to-end, probabilistic sequence
+                     transduction system, based entirely on RNNs, that is in
+                     principle able to transform any input sequence into any
+                     finite, discrete output sequence. Experimental results for
+                     phoneme recognition are provided on the TIMIT speech corpus.",
+    month         =  "14~" # nov,
+    year          =  2012,
+    url           = "http://arxiv.org/abs/1211.3711",
+    archivePrefix = "arXiv",
+    eprint        = "1211.3711",
+    primaryClass  = "cs.NE",
+    arxivid       = "1211.3711",
+    journal={arXiv preprint arXiv:1211.3711}
+ }
+% ML theory papers
+@article{hochreiter1997long,
+  title={Long short-term memory},
+  author={Hochreiter, Sepp and Schmidhuber, J{\"u}rgen},
+  journal={Neural computation},
+  volume={9},
+  number={8},
+  pages={1735--1780},
+  year={1997},
+  publisher={MIT Press}
+}
+
+@article{kim2014convolutional,
+  title={Convolutional neural networks for sentence classification},
+  author={Kim, Yoon},
+  journal={arXiv preprint arXiv:1408.5882},
+  year={2014}
+}
+
+@inproceedings{higgins2017beta,
+  title={beta-vae: Learning basic visual concepts with a constrained variational framework},
+  author={Higgins, Irina and Matthey, Loic and Pal, Arka and Burgess, Christopher and Glorot, Xavier and Botvinick, Matthew and Mohamed, Shakir and Lerchner, Alexander},
+  booktitle={International Conference on Learning Representations},
+  volume={3},
+  year={2017}
+}
+
+% ML Domain ref
+@article{botu2015adaptive,
+  title={Adaptive machine learning framework to accelerate ab initio molecular dynamics},
+  author={Botu, Venkatesh and Ramprasad, Rampi},
+  journal={International Journal of Quantum Chemistry},
+  volume={115},
+  number={16},
+  pages={1074--1083},
+  year={2015},
+  publisher={Wiley Online Library}
+}
+
+@article{ferguson2017machine,
+  title={Machine learning and data science in soft materials engineering},
+  author={Ferguson, Andrew L},
+  journal={Journal of Physics: Condensed Matter},
+  volume={30},
+  number={4},
+  pages={043002},
+  year={2017},
+  publisher={IOP Publishing}
+}
+
+@article{liu2017self,
+  title={Self-learning monte carlo method},
+  author={Liu, Junwei and Qi, Yang and Meng, Zi Yang and Fu, Liang},
+  journal={Physical Review B},
+  volume={95},
+  number={4},
+  pages={041101},
+  year={2017},
+  publisher={APS}
+}
+
+@article{spellings2018machine,
+  title={Machine learning for crystal identification and discovery},
+  author={Spellings, Matthew and Glotzer, Sharon C},
+  journal={AIChE Journal},
+  volume={64},
+  number={6},
+  pages={2198--2206},
+  year={2018},
+  publisher={Wiley Online Library}
+}
+
+@article{hase2017machine,
+  title={Machine learning for quantum dynamics: deep learning of excitation energy transfer properties},
+  author={H{\"a}se, Florian and Kreisbeck, Christoph and Aspuru-Guzik, Al{\'a}n},
+  journal={Chemical science},
+  volume={8},
+  number={12},
+  pages={8419--8426},
+  year={2017},
+  publisher={Royal Society of Chemistry}
+}
+
+@article{schoenholz2017relationship,
+  title={Relationship between local structure and relaxation in out-of-equilibrium glassy systems},
+  author={Schoenholz, Samuel S and Cubuk, Ekin D and Kaxiras, Efthimios and Liu, Andrea J},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={114},
+  number={2},
+  pages={263--267},
+  year={2017},
+  publisher={National Acad Sciences}
+}
+
+@article{fu2017,
+  title = {Self-learning Monte Carlo method},
+  author = {Liu, Junwei and Qi, Yang and Meng, Zi Yang and Fu, Liang},
+  journal = {Phys. Rev. B},
+  volume = {95},
+  issue = {4},
+  pages = {041101},
+  numpages = {5},
+  year = {2017},
+  month = {Jan},
+  publisher = {American Physical Society}
+}
+
+@article{butler2018machine,
+  title={Machine learning for molecular and materials science},
+  author={Butler, Keith T and Davies, Daniel W and Cartwright, Hugh and Isayev, Olexandr and Walsh, Aron},
+  journal={Nature},
+  volume={559},
+  number={7715},
+  pages={547},
+  year={2018},
+  publisher={Nature Publishing Group}
+}
+
+% Parameter Prediction using Machine Learning
+@article{ding2001multi,
+  title={Multi-class protein fold recognition using support vector machines and neural networks},
+  author={Ding, Chris HQ and Dubchak, Inna},
+  journal={Bioinformatics},
+  volume={17},
+  number={4},
+  pages={349--358},
+  year={2001},
+  publisher={Oxford University Press}
+}
+@article{kuncemachine,
+  title={A MACHINE-LEARNING APPROACH TO PARAMETER ESTIMATION},
+  author={Kunce, Jim and Chatterjee, Som}
+}
+@inproceedings{balakrishnan2005multilayer,
+  title={Multilayer perceptrons for the classification of brain computer interface data},
+  author={Balakrishnan, Divya and Puthusserypady, Sadasivan},
+  booktitle={Bioengineering Conference, 2005. Proceedings of the IEEE 31st Annual Northeast},
+  pages={118--119},
+  year={2005},
+  organization={IEEE}
+}
+@inproceedings{denil2013predicting,
+  title={Predicting parameters in deep learning},
+  author={Denil, Misha and Shakibi, Babak and Dinh, Laurent and De Freitas, Nando and others},
+  booktitle={Advances in neural information processing systems},
+  pages={2148--2156},
+  year={2013}
+}
+@inproceedings{ganapathi2009case,
+  title={A case for machine learning to optimize multicore performance},
+  author={Ganapathi, Archana and Datta, Kaushik and Fox, Armando and Patterson, David},
+  booktitle={First USENIX Workshop on Hot Topics in Parallelism (HotPar’09)},
+  year={2009}
+}
+@inproceedings{bergstra2012machine,
+  title={Machine learning for predictive auto-tuning with boosted regression trees},
+  author={Bergstra, James and Pinto, Nicolas and Cox, David},
+  booktitle={Innovative Parallel Computing (InPar), 2012},
+  pages={1--9},
+  year={2012},
+  organization={IEEE}
+}
+@inproceedings{yigitbasi2013towards,
+  title={Towards machine learning-based auto-tuning of mapreduce},
+  author={Yigitbasi, Nezih and Willke, Theodore L and Liao, Guangdeng and Epema, Dick},
+  booktitle={Modeling, Analysis \& Simulation of Computer and Telecommunication Systems (MASCOTS), 2013 IEEE 21st International Symposium on},
+  pages={11--20},
+  year={2013},
+  organization={IEEE}
+}
+@inproceedings{liao2013gunther,
+  title={Gunther: Search-based auto-tuning of mapreduce},
+  author={Liao, Guangdeng and Datta, Kushal and Willke, Theodore L},
+  booktitle={European Conference on Parallel Processing},
+  pages={406--419},
+  year={2013},
+  organization={Springer}
+}
+
+@article{morningstar2017deep,
+  title={Deep learning the Ising model near criticality},
+  author={Morningstar, Alan and Melko, Roger G},
+  journal={arXiv preprint arXiv:1708.04622},
+  year={2017}
+}
+
+@article{behler2016perspective,
+  title={Perspective: Machine learning potentials for atomistic simulations},
+  author={Behler, J{\"o}rg},
+  journal={The Journal of chemical physics},
+  volume={145},
+  number={17},
+  pages={170901},
+  year={2016},
+  publisher={AIP Publishing}
+}
+
+@article{long2015machine,
+  title={Machine learning assembly landscapes from particle tracking data},
+  author={Long, Andrew W and Zhang, Jie and Granick, Steve and Ferguson, Andrew L},
+  journal={Soft Matter},
+  volume={11},
+  number={41},
+  pages={8141--8153},
+  year={2015},
+  publisher={Royal Society of Chemistry}
+}
+
+@article{guo2018adaptive,
+  title={Adaptive enhanced sampling by force-biasing using neural networks},
+  author={Guo, Ashley Z and Sevgen, Emre and Sidky, Hythem and Whitmer, Jonathan K and Hubbell, Jeffrey A and de Pablo, Juan J},
+  journal={The Journal of chemical physics},
+  volume={148},
+  number={13},
+  pages={134108},
+  year={2018},
+  publisher={AIP Publishing}
+}
+
+@article{ward2016general,
+  title={A general-purpose machine learning framework for predicting properties of inorganic materials},
+  author={Ward, Logan and Agrawal, Ankit and Choudhary, Alok and Wolverton, Christopher},
+  journal={npj Computational Materials},
+  volume={2},
+  pages={16028},
+  year={2016},
+  publisher={Nature Publishing Group}
+}
+
+@article{eng2014predicting,
+  title={Predicting host tropism of influenza A virus proteins using random forest},
+  author={Eng, Christine LP and Tong, Joo Chuan and Tan, Tin Wee},
+  journal={BMC medical genomics},
+  volume={7},
+  number={3},
+  pages={S1},
+  year={2014},
+  publisher={BioMed Central}
+}
+
+@inproceedings{kazemi2014one,
+  title={One millisecond face alignment with an ensemble of regression trees},
+  author={Kazemi, Vahid and Sullivan, Josephine},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={1867--1874},
+  year={2014}
+}
+
+@article{cherkassky2004practical,
+  title={Practical selection of SVM parameters and noise estimation for SVM regression},
+  author={Cherkassky, Vladimir and Ma, Yunqian},
+  journal={Neural networks},
+  volume={17},
+  number={1},
+  pages={113--126},
+  year={2004},
+  publisher={Elsevier}
+}
+
+@article{quan2014short,
+  title={Short-term load and wind power forecasting using neural network-based prediction intervals},
+  author={Quan, Hao and Srinivasan, Dipti and Khosravi, Abbas},
+  journal={IEEE transactions on neural networks and learning systems},
+  volume={25},
+  number={2},
+  pages={303--315},
+  year={2014},
+  publisher={IEEE}
+}
+
+
+
+@article{chen2014short,
+  title={Short-term wind speed prediction using an unscented Kalman filter based state-space support vector regression approach},
+  author={Chen, Kuilin and Yu, Jie},
+  journal={Applied Energy},
+  volume={113},
+  pages={690--705},
+  year={2014},
+  publisher={Elsevier}
+}
+
+@article{kazem2013support,
+  title={Support vector regression with chaos-based firefly algorithm for stock market price forecasting},
+  author={Kazem, Ahmad and Sharifi, Ebrahim and Hussain, Farookh Khadeer and Saberi, Morteza and Hussain, Omar Khadeer},
+  journal={Applied soft computing},
+  volume={13},
+  number={2},
+  pages={947--958},
+  year={2013},
+  publisher={Elsevier}
+}
+
+@article{yadav2016selection,
+  title={Selection of most relevant input parameters using WEKA for artificial neural network based solar radiation prediction models},
+  author={Yadav, Amit Kumar and Malik, Hasmat and Chandel, SS},
+  journal={Renewable and Sustainable Energy Reviews},
+  volume={31},
+  pages={509--519},
+  year={2016},
+  publisher={Elsevier}
+}
+
+@article{balachandran2016adaptive,
+  title={Adaptive strategies for materials design using uncertainties},
+  author={Balachandran, Prasanna V and Xue, Dezhen and Theiler, James and Hogden, John and Lookman, Turab},
+  journal={Scientific reports},
+  volume={6},
+  pages={19660},
+  year={2016},
+  publisher={Nature Publishing Group}
+}
+
+@article{martinez2014,
+author = {Luehr,Nathan  and Markland,Thomas E.  and Martínez,Todd J. },
+title = {Multiple time step integrators in ab initio molecular dynamics},
+journal = {The Journal of Chemical Physics},
+volume = {140},
+number = {8},
+pages = {084116},
+year = {2014},
+doi = {10.1063/1.4866176}
+}
+
+@article{tuckerman1992reversible,
+  title={Reversible multiple time scale molecular dynamics},
+  author={Tuckerman, MBBJM and Berne, Bruce J and Martyna, Glenn J},
+  journal={The Journal of chemical physics},
+  volume={97},
+  number={3},
+  pages={1990--2001},
+  year={1992},
+  publisher={AIP}
+}
+
+@article{kasson2018adaptive,
+  title={Adaptive ensemble simulations of biomolecules},
+  author={Kasson, Peter M and Jha, Shantenu},
+  journal={Current opinion in structural biology},
+  volume={52},
+  pages={87--94},
+  year={2018},
+  publisher={Elsevier}
+}
+
+@inproceedings{whaley1998automatically,
+  title={Automatically tuned linear algebra software},
+  author={Whaley, R Clinton and Dongarra, Jack J},
+  booktitle={Supercomputing, 1998. SC98. IEEE/ACM Conference on},
+  pages={38--38},
+  year={1998},
+  organization={IEEE}
+}
+
+@article{balaprakash2018autotuning,
+  title={Autotuning in High-Performance Computing Applications},
+  author={Balaprakash, Prasanna and Dongarra, Jack and Gamblin, Todd and Hall, Mary and Hollingsworth, Jeffrey K and Norris, Boyana and Vuduc, Richard},
+  journal={Proceedings of the IEEE},
+  number={99},
+  volume={106},
+  pages={1--16},
+  year={2018},
+  publisher={IEEE}
+}
+
+@misc{chollet2015keras,
+  title={Keras},
+  author={Chollet, Fran{\c{c}}ois and others},
+  year={2015}
+}
+
+@article{buitinck2013api,
+  title={API design for machine learning software: experiences from the scikit-learn project},
+  author={Buitinck, Lars and others},
+  journal={arXiv:1309.0238},
+  year={2013}
+}
+
+@inproceedings{abadi2016tensorflow,
+  title={Tensorflow: a system for large-scale machine learning.},
+  author={Abadi, Mart{\'\i}n and Barham, Paul and Chen, Jianmin and Chen, Zhifeng and Davis, Andy and Dean, Jeffrey and Devin, Matthieu and Ghemawat, Sanjay and Irving, Geoffrey and Isard, Michael and others},
+  booktitle={OSDI},
+  volume={16},
+  pages={265--283},
+  year={2016}
+}
+
+@inproceedings{lu2017expressive,
+  title={The expressive power of neural networks: A view from the width},
+  author={Lu, Zhou and Pu, Hongming and Wang, Feicheng and Hu, Zhiqiang and Wang, Liwei},
+  booktitle={Advances in neural information processing systems},
+  pages={6231--6239},
+  year={2017}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% published
+%% in reverse chronological
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{brunk2019computational,
+  title={Computational studies of shape control of charged deformable nanocontainers},
+  author={Brunk, Nicholas E and Jadhao, Vikram},
+  journal={Journal of Materials Chemistry B},
+  year={2019},
+  volume={7},
+  pages={6370},
+  publisher={Royal Society of Chemistry},
+  doi  ="10.1039/C9TB01003C",
+  url  ="http://dx.doi.org/10.1039/C9TB01003C",
+}
+@article{jadhao2019rheological,
+  title={Rheological properties of liquids under conditions of elastohydrodynamic lubrication},
+  author={Jadhao, Vikram and Robbins, Mark O},
+  journal={Tribology Letters},
+  volume={67},
+  number={3},
+  pages={66},
+  year={2019},
+  publisher={Springer},
+  doi="10.1007/s11249-019-1178-3",
+  url="https://doi.org/10.1007/s11249-019-1178-3"
+}
+@inproceedings{fox2019learning,
+  title={Learning Everywhere: Pervasive machine learning for effective High-Performance computation},
+  author={Fox, Geoffrey and Glazier, James A and Kadupitiya, JCS and Jadhao, Vikram and others},
+  booktitle={{IEEE} {IPDPS} Workshops},
+  year={2019},
+  pages={422-429},
+  url={https://doi.org/10.1109/IPDPSW.2019.00081}
+}
+%note={arXiv:1902.10810}
+@inproceedings{kadupitiya2019machine,
+  title={Machine learning for performance enhancement of molecular dynamics simulations},
+  author={Kadupitiya, JCS and Fox, Geoffrey C and Jadhao, Vikram},
+  booktitle={International Conference on Computational Science},
+  pages={116--130},
+  year={2019},
+  url={https://link.springer.com/chapter/10.1007/978-3-030-22741-8$\_$9}
+}
+%organization={Springer},
+@article{brunk2019linker,
+author = {Brunk, Nicholas E. and Uchida, Masaki and Lee, Byeongdu and Fukuto, Masafumi and Yang, Lin and Douglas, Trevor and Jadhao, Vikram},
+title = {Linker-Mediated Assembly of Virus-Like Particles into Ordered Arrays via Electrostatic Control},
+journal = {ACS Applied Bio Mat.},
+volume = {2},
+number = {5},
+pages = {2192-2201},
+year = {2019},
+doi = {10.1021/acsabm.9b00166}
+}
+%journal = {ACS Applied Bio Materials},
+@inproceedings{marru2017development,
+  title={Development of the Nanoconfinement Science Gateway},
+  author={Marru, Suresh and Jadhao, Vikram},
+  booktitle={Gateways 2017},
+  year={2017},
+  doi={https://doi.org/10.6084/m9.figshare.5483659.v1}
+}
+@article{jadhao2017reply,
+  title={Reply to Bair: Crossover to Arrhenius behavior at high viscosities in squalane},
+  author={Jadhao, Vikram and Robbins, Mark O},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={114},
+  number={42},
+  pages={E8807--E8808},
+  year={2017},
+  publisher={National Acad Sciences},
+  doi = {10.1073/pnas.1715298114},
+  URL = {https://www.pnas.org/content/114/42/E8807}
+}
+
+@article{jadhao2017probing,
+  title={Probing large viscosities in glass-formers with nonequilibrium simulations},
+  author={Jadhao, Vikram and Robbins, Mark O},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={114},
+  number={30},
+  pages={7952--7957},
+  year={2017},
+  publisher={National Acad Sciences},
+  doi = {10.1073/pnas.1705978114},
+  URL = {https://www.pnas.org/content/114/30/7952}
+}
+@article{jadhao2015coulomb,
+  title={Coulomb energy of uniformly charged spheroidal shell systems},
+  author={Jadhao, Vikram and Yao, Zhenwei and Thomas, Creighton K and Olvera de la Cruz, Monica},
+  journal={Physical Review E},
+  volume={91},
+  number={3},
+  pages={032305},
+  year={2015},
+  publisher={APS}
+}
+@article{jing2015ionic,
+  title={Ionic structure in liquids confined by dielectric interfaces},
+  author={Jing, Yufei and Jadhao, Vikram and Zwanikken, Jos W and Olvera de la Cruz, Monica},
+  journal={The Journal of chemical physics},
+  volume={143},
+  number={19},
+  pages={194508},
+  year={2015},
+  publisher={AIP Publishing}
+}
+@article{jadhao2014electrostatics,
+  title={Electrostatics-driven shape transitions in soft shells},
+  author={Jadhao, Vikram and Thomas, Creighton K and Olvera de la Cruz, Monica},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={111},
+  number={35},
+  pages={12673--12678},
+  year={2014},
+  publisher={National Acad Sciences}
+}
+@article{solis2013generating,
+  title={Generating true minima in constrained variational formulations via modified Lagrange multipliers},
+  author={Solis, Francisco J and Jadhao, Vikram and Olvera de la Cruz, Monica},
+  journal={Physical Review E},
+  volume={88},
+  number={5},
+  pages={053306},
+  year={2013},
+  publisher={APS}
+}
+@article{jadhao2013free,
+  title={Free-energy functionals of the electrostatic potential for Poisson-Boltzmann theory},
+  author={Jadhao, Vikram and Solis, Francisco J and Olvera de la Cruz, Monica},
+  journal={Physical Review E},
+  volume={88},
+  number={2},
+  pages={022305},
+  year={2013},
+  publisher={APS}
+}
+@article{jadhao2013variational,
+  title={A variational formulation of electrostatics in a medium with spatially varying dielectric permittivity},
+  author={Jadhao, Vikram and Solis, Francisco J and Olvera de la Cruz, Monica},
+  journal={The Journal of chemical physics},
+  volume={138},
+  number={5},
+  pages={054119},
+  year={2013},
+  publisher={AIP}
+}
+@article{jadhao2012simulation,
+  title={Simulation of charged systems in heterogeneous dielectric media via a true energy functional},
+  author={Jadhao, Vikram and Solis, Francisco J and Olvera de la Cruz, Monica},
+  journal={Physical review letters},
+  volume={109},
+  number={22},
+  pages={223905},
+  year={2012},
+  publisher={APS}
+}
+@article{jadhao2010iterative2,
+  title={Iterative Monte Carlo path integral with optimal grids from whole-necklace sampling},
+  author={Jadhao, Vikram and Makri, Nancy},
+  journal={The Journal of chemical physics},
+  volume={133},
+  number={11},
+  pages={114105},
+  year={2010},
+  publisher={AIP}
+}
+@article{jadhao2010iterative1,
+  title={Iterative Monte Carlo with bead-adapted sampling for complex-time correlation functions},
+  author={Jadhao, Vikram and Makri, Nancy},
+  journal={The Journal of chemical physics},
+  volume={132},
+  number={10},
+  pages={104110},
+  year={2010},
+  publisher={AIP}
+}
+@article{jadhao2008iterative,
+author = {Jadhao,Vikram  and Makri,Nancy },
+title = {Iterative Monte Carlo for quantum dynamics},
+journal = {The Journal of Chemical Physics},
+volume = {129},
+number = {16},
+pages = {161102},
+year = {2008},
+doi = {10.1063/1.3000393},
+URL = {https://doi.org/10.1063/1.3000393}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% software apps & education
+%note = {Source code on GitHub at github.com/softmaterialslab/}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@misc{kadupitiya2017,
+title = {Ions in Nanoconfinement},
+note = {nanoHUB},
+month = {Dec},
+year = {2017},
+url = {https://nanohub.org/resources/nanoconfinement},
+doi = {doi:10.21981/D236-ZZ44},
+author = {Kadupitiya , Kadupitige and Anousheh , Nasim and Marru , Suresh and Fox , Geoffrey C. and Jadhao , Vikram}
+}
+%note = {Source code on GitHub at github.com/softmaterialslab/nanoconfinement}
+@misc{kadupitiya2018,
+title = {Nanosphere Electrostatics Lab},
+note = {nanoHUB},
+month = {May},
+year = {2018},
+url = {https://nanohub.org/resources/nselectrostatic},
+doi = {doi:10.4231/D34X54J88},
+author = {Kadupitiya, Jcs and Brunk, Nicholas and Ali, Sohile and Fox , Geoffrey C. and Jadhao, Vikram}
+}
+%note = {Source code on GitHub at github.com/softmaterialslab/np-electrostatics-lab}
+@misc{brunk2019,
+title = {Nanoparticle Assembly Lab},
+note = {nanoHUB},
+month = {January},
+year = {2019},
+doi = {doi:10.21981/RECV-RD32},
+url = {https://nanohub.org/resources/npassemblylab},
+author = {Brunk , Nicholas and Kadupitiya , JCS and Uchida , Masaki and Douglas , Trevor and Jadhao , Vikram}
+}
+%note = {Source code on GitHub at github.com/softmaterialslab/np-assembly-lab}
+@misc{lauren2019,
+title = {Polyvalent Nanoparticle Binding Simulator},
+note = {nanoHUB},
+month = {Apr},
+url = {https://nanohub.org/resources/nanobind},
+year = {2019},
+doi = {doi:10.21981/YWMS-6S33},
+author = {Nilsson , Lauren and Kadupitiya , JCS and Jadhao , Vikram}
+}
+%note = {Source code on GitHub at github.com/softmaterialslab/nanobind}
+@misc{video.nano,
+	title = {Nanoscale Simulations and Engineering Applications: Applications - Self-Assembly in Nanoconfinement},
+	month = {Feb},
+	url = {https://nanohub.org/resources/29671},
+	year = {2019},
+	author = {Jadhao , Vikram}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% submitted
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{jcs1,
+author = {Kadupitiya, JCS and Fox, G. C. and Jadhao, V.}, 
+journal = {IJHPCA},
+title = {Machine learning for parameter auto-tuning in molecular dynamics simulations: Efficient dynamics of ions near polarizable nanoparticles},
+year = {2019},
+note = {{A}ccepted; \href{https://arxiv.org/abs/1910.14620}{\mbox{\color{black}arxiv:1910.14620}}}
+}
+@inproceedings{prateek1,
+author = {Sharma, P. and Kadupitiya, JCS and Jadhao, V.}, 
+booktitle = {SIGMETRICS},
+year = {2019},
+title = {Modeling Constrained Preemption Dynamics of Transient Cloud Servers},
+note = {{U}nder review}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% in preparation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{vikram1,
+author = {Jadhao, V. and Kadupitiya, J.}, 
+journal = {Polymers,},
+title = {Extracting molecular mechanisms of shear-thinning in lubricants under high shear rates using nonequilibrium simulations and machine learning},
+note ={{I}nvited Article (In preparation)}
+}
+@article{jcs2,
+author = {Kadupitiya, JCS and Sun, Fanbo and Fox, Geoffrey C and Jadhao, Vikram}, 
+journal = {Journal of Computational Science,},
+title = {Machine Learning Surrogates for Molecular Dynamics Simulations},
+note ={{I}nvited Article (In preparation)}
+}
+@article{lauren1,
+author = {Nilsson, L. and Kadupitiya, JCS and Jadhao, V.}, 
+title = {Self-Assembly of Flexible Capsomeres into Virus Capsids and Oligomers},
+note ={in preparation}
+}
+@article{nick1,
+author = {Brunk, N. and Kadupitiya, JCS and Jadhao, V.}, 
+title = {Shapes of Charge-Patterned Deformable Nanocontainers},
+note ={in preparation}
+}
+@article{jcs4,
+author = {Kadupitiya, JCS and Fox, G. C. and Jadhao, V.}, 
+title = {Recurrent neural networks as integrators for molecular dynamics simulations},
+note ={in preparation}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% publicity and honors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{2019JMCBback,
+title  = {Inside back cover},
+journal  = {J. Mater. Chem. B},
+year  = {2019},
+volume  = {7},
+issue  = {41},
+pages  ={6459-6459},
+publisher  = {The Royal Society of Chemistry},
+doi  ={10.1039/C9TB90149C},
+url  ={http://dx.doi.org/10.1039/C9TB90149C}
+}
+@Article{2019JMCBemerging,
+title  ="Journal of Materials Chemistry B profiles: Contributors to the Emerging Investigators 2019 Issue",
+journal  ="J. Mater. Chem. B",
+year  ="2019",
+volume  ="7",
+issue  ="41",
+pages  ="6267-6270",
+publisher  ="The Royal Society of Chemistry",
+doi  ="10.1039/C9TB90141H",
+url  ="http://dx.doi.org/10.1039/C9TB90141H",
+abstract  ="Our 2019 Emerging Investigators themed issues gather some of the best research being conducted by scientists in the early stages of their independent career. Each contributor was recommended as carrying out work with the potential to influence future directions in materials chemistry. Congratulations to all of the researchers featured{,} we hope you enjoy reading this issue."}
+@article{cayer2019rheological,
+  title={Rheological Properties of Liquids Under Conditions of Elastohydrodynamic Lubrication},
+  author={Cayer-Barrioz, Juliette},
+  journal={Tribology \& Lubrication Technology},
+  volume={75},
+  number={7},
+  pages={53--53},
+  year={2019},
+  publisher={Society of Tribologists and Lubrication Engineers}
+}
+
+@article{venneri1987simple,
+  title={Simple exact test for well-known molecular dynamics algorithms},
+  author={Venneri, GD and Hoover, William G},
+  journal={Journal of computational physics (Print)},
+  volume={73},
+  number={2},
+  pages={468--475},
+  year={1987}
+}
+
+@article{hoover2015comparison,
+  title={Comparison of very smooth cell-model trajectories using five symplectic and two runge-kutta integrators},
+  author={Hoover, William Graham and Hoover, Carol Griswold},
+  journal={arXiv preprint arXiv:1504.00620},
+  year={2015}
+}
+
+@article{smit1992phase,
+  title={Phase diagrams of Lennard-Jones fluids},
+  author={Smit, B},
+  journal={The Journal of chemical physics},
+  volume={96},
+  number={11},
+  pages={8639--8640},
+  year={1992},
+  publisher={American Institute of Physics}
+}
+
+@article{posch1988lyapunov,
+  title={Lyapunov instability of dense Lennard-Jones fluids},
+  author={Posch, HA and Hoover, Wm G},
+  journal={Physical Review A},
+  volume={38},
+  number={1},
+  pages={473},
+  year={1988},
+  publisher={APS}
+}
+
+@article{verlet1967computer,
+  title={Computer" experiments" on classical fluids. I. Thermodynamical properties of Lennard-Jones molecules},
+  author={Verlet, Loup},
+  journal={Physical review},
+  volume={159},
+  number={1},
+  pages={98},
+  year={1967},
+  publisher={APS}
+}
+
+@inproceedings{glorot2010understanding,
+  title={Understanding the difficulty of training deep feedforward neural networks},
+  author={Glorot, Xavier and Bengio, Yoshua},
+  journal={Proceedings of the thirteenth international conference on artificial intelligence and statistics},
+  pages={249--256},
+  year={2010}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% published
+%% in reverse chronological
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{kadupitiya2020machine,
+  title={Machine learning surrogates for molecular dynamics simulations of soft materials},
+  author={Kadupitiya, JCS and Sun, Fanbo and Fox, Geoffrey and Jadhao, Vikram},
+  journal={Journal of Computational Science},
+  pages={101107},
+  year={2020},
+  publisher={Elsevier}
+}
+@article{kadupitiya2020ml,
+author = {JCS Kadupitiya and Geoffrey C Fox and Vikram Jadhao},
+title ={Machine learning for parameter auto-tuning in molecular dynamics simulations: Efficient dynamics of ions near polarizable nanoparticles},
+journal = {The International Journal of High Performance Computing Applications},
+doi = {10.1177/1094342019899457},
+URL = {https://doi.org/10.1177/1094342019899457},
+year={2020}
+}
+%doi = "10.1177/1094342019899457",
+%note = {{A}ccepted; \href{https://arxiv.org/abs/1910.14620}{\mbox{arxiv:1910.14620}}},
+@article{jadhao2019rheological,
+  title={Rheological properties of liquids under conditions of elastohydrodynamic lubrication},
+  author={Jadhao, Vikram and Robbins, Mark O},
+  journal={Tribology Letters},
+  volume={67},
+  number={3},
+  pages={66},
+  year={2019},
+  publisher={Springer},
+  doi="10.1007/s11249-019-1178-3",
+  url="https://doi.org/10.1007/s11249-019-1178-3"
+}
+@inproceedings{fox2019learning,
+  title={Learning Everywhere: Pervasive machine learning for effective High-Performance computation},
+  author={Fox, Geoffrey and Glazier, James A and Kadupitiya, JCS and Jadhao, Vikram and others},
+  booktitle={{IEEE} {IPDPS} Workshops},
+  year={2019},
+  pages={422-429},
+  url={https://doi.org/10.1109/IPDPSW.2019.00081}
+}
+%note={arXiv:1902.10810}
+
+%organization={Springer},
+@article{brunk2019linker,
+author = {Brunk, Nicholas E. and Uchida, Masaki and Lee, Byeongdu and Fukuto, Masafumi and Yang, Lin and Douglas, Trevor and Jadhao, Vikram},
+title = {Linker-Mediated Assembly of Virus-Like Particles into Ordered Arrays via Electrostatic Control},
+journal = {ACS Applied Bio Mat.},
+volume = {2},
+number = {5},
+pages = {2192-2201},
+year = {2019},
+doi = {10.1021/acsabm.9b00166}
+}
+%journal = {ACS Applied Bio Materials},
+@inproceedings{marru2017development,
+  title={Development of the Nanoconfinement Science Gateway},
+  author={Marru, Suresh and Jadhao, Vikram},
+  booktitle={Gateways 2017},
+  year={2017},
+  doi={https://doi.org/10.6084/m9.figshare.5483659.v1}
+}
+@article{jadhao2017reply,
+  title={Reply to Bair: Crossover to Arrhenius behavior at high viscosities in squalane},
+  author={Jadhao, Vikram and Robbins, Mark O},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={114},
+  number={42},
+  pages={E8807--E8808},
+  year={2017},
+  publisher={National Acad Sciences},
+  doi = {10.1073/pnas.1715298114},
+  URL = {https://www.pnas.org/content/114/42/E8807}
+}
+
+@article{jadhao2017probing,
+  title={Probing large viscosities in glass-formers with nonequilibrium simulations},
+  author={Jadhao, Vikram and Robbins, Mark O},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={114},
+  number={30},
+  pages={7952--7957},
+  year={2017},
+  publisher={National Acad Sciences},
+  doi = {10.1073/pnas.1705978114},
+  URL = {https://www.pnas.org/content/114/30/7952}
+}
+@article{jadhao2015coulomb,
+  title={Coulomb energy of uniformly charged spheroidal shell systems},
+  author={Jadhao, Vikram and Yao, Zhenwei and Thomas, Creighton K and Olvera de la Cruz, Monica},
+  journal={Physical Review E},
+  volume={91},
+  number={3},
+  pages={032305},
+  year={2015},
+  publisher={APS}
+}
+@article{jing2015ionic,
+  title={Ionic structure in liquids confined by dielectric interfaces},
+  author={Jing, Yufei and Jadhao, Vikram and Zwanikken, Jos W and Olvera de la Cruz, Monica},
+  journal={The Journal of chemical physics},
+  volume={143},
+  number={19},
+  pages={194508},
+  year={2015},
+  publisher={AIP Publishing}
+}
+@article{jadhao2014electrostatics,
+  title={Electrostatics-driven shape transitions in soft shells},
+  author={Jadhao, Vikram and Thomas, Creighton K and Olvera de la Cruz, Monica},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={111},
+  number={35},
+  pages={12673--12678},
+  year={2014},
+  publisher={National Acad Sciences}
+}
+@article{solis2013generating,
+  title={Generating true minima in constrained variational formulations via modified Lagrange multipliers},
+  author={Solis, Francisco J and Jadhao, Vikram and Olvera de la Cruz, Monica},
+  journal={Physical Review E},
+  volume={88},
+  number={5},
+  pages={053306},
+  year={2013},
+  publisher={APS}
+}
+@article{jadhao2013free,
+  title={Free-energy functionals of the electrostatic potential for Poisson-Boltzmann theory},
+  author={Jadhao, Vikram and Solis, Francisco J and Olvera de la Cruz, Monica},
+  journal={Physical Review E},
+  volume={88},
+  number={2},
+  pages={022305},
+  year={2013},
+  publisher={APS}
+}
+@article{jadhao2013variational,
+  title={A variational formulation of electrostatics in a medium with spatially varying dielectric permittivity},
+  author={Jadhao, Vikram and Solis, Francisco J and Olvera de la Cruz, Monica},
+  journal={The Journal of chemical physics},
+  volume={138},
+  number={5},
+  pages={054119},
+  year={2013},
+  publisher={AIP}
+}
+@article{jadhao2012simulation,
+  title={Simulation of charged systems in heterogeneous dielectric media via a true energy functional},
+  author={Jadhao, Vikram and Solis, Francisco J and Olvera de la Cruz, Monica},
+  journal={Physical review letters},
+  volume={109},
+  number={22},
+  pages={223905},
+  year={2012},
+  publisher={APS}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% software apps
+%note = {Source code on GitHub at github.com/softmaterialslab/}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@misc{kadupitiya2017,
+title = {Ions in Nanoconfinement},
+note = {nanoHUB},
+month = {Dec},
+year = {2017},
+url = {https://nanohub.org/resources/nanoconfinement},
+doi = {doi:10.21981/D236-ZZ44},
+author = {Kadupitiya , Kadupitige and Anousheh , Nasim and Marru , Suresh and Fox , Geoffrey C. and Jadhao , Vikram}
+}
+%note = {Source code on GitHub at github.com/softmaterialslab/nanoconfinement}
+@misc{kadupitiya2018,
+title = {Nanosphere Electrostatics Lab},
+note = {nanoHUB},
+month = {May},
+year = {2018},
+url = {https://nanohub.org/resources/nselectrostatic},
+doi = {doi:10.4231/D34X54J88},
+author = {Kadupitiya, Jcs and Brunk, Nicholas and Ali, Sohile and Fox , Geoffrey C. and Jadhao, Vikram}
+}
+%note = {Source code on GitHub at github.com/softmaterialslab/np-electrostatics-lab}
+@misc{brunk2019,
+title = {Nanoparticle Assembly Lab},
+note = {nanoHUB},
+month = {January},
+year = {2019},
+doi = {doi:10.21981/RECV-RD32},
+url = {https://nanohub.org/resources/npassemblylab},
+author = {Brunk , Nicholas and Kadupitiya , JCS and Uchida , Masaki and Douglas , Trevor and Jadhao , Vikram}
+}
+%note = {Source code on GitHub at github.com/softmaterialslab/np-assembly-lab}
+@misc{lauren2019,
+title = {Polyvalent Nanoparticle Binding Simulator},
+note = {nanoHUB},
+month = {Apr},
+url = {https://nanohub.org/resources/nanobind},
+year = {2019},
+doi = {doi:10.21981/YWMS-6S33},
+author = {Nilsson , Lauren and Kadupitiya , JCS and Jadhao , Vikram}
+}
+%note = {Source code on GitHub at github.com/softmaterialslab/nanobind}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% submitted
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@inproceedings{prateek1,
+author = {Sharma, P. and Kadupitiya, JCS and Jadhao, V.}, 
+booktitle = {ACM Symposium on High-Performance Parallel and Distributed Computing},
+title = {Modeling Constrained Preemption Dynamics of Transient Cloud Servers},
+note = {{U}nder review},
+year = {2020}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% in preparation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{vikram1,
+author = {Jadhao, V. and Kadupitiya, J.}, 
+journal = {Polymers,},
+title = {Extracting molecular mechanisms of shear-thinning in lubricants under high shear rates using nonequilibrium simulations and machine learning},
+note ={{I}nvited Article (In preparation)}
+}
+@article{lauren1,
+author = {Nilsson, L. and Kadupitiya, JCS and Jadhao, V.}, 
+title = {Self-Assembly of Flexible Capsomeres into Virus Capsids and Oligomers},
+note ={in preparation},
+year={2020}
+}
+@article{nick1,
+author = {Brunk, N. and Kadupitiya, JCS and Jadhao, V.}, 
+title = {Shapes of Charge-Patterned Deformable Nanocontainers},
+note ={in preparation},
+year={2020}
+}
+@article{jcs4,
+author = {Kadupitiya, JCS and Fox, G. C. and Jadhao, V.},
+title = {Recurrent neural networks based integrators for molecular dynamics simulations},
+note ={in preparation},
+year={2020}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% publicity and honors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{2019JMCBback,
+title  = {Inside back cover},
+journal  = {J. Mater. Chem. B},
+year  = {2019},
+volume  = {7},
+issue  = {41},
+pages  ={6459-6459},
+publisher  = {The Royal Society of Chemistry},
+doi  ={10.1039/C9TB90149C},
+url  ={http://dx.doi.org/10.1039/C9TB90149C}
+}
+@Article{2019JMCBemerging,
+title  ="Journal of Materials Chemistry B profiles: Contributors to the Emerging Investigators 2019 Issue",
+journal  ="J. Mater. Chem. B",
+year  ="2019",
+volume  ="7",
+issue  ="41",
+pages  ="6267-6270",
+publisher  ="The Royal Society of Chemistry",
+doi  ="10.1039/C9TB90141H",
+url  ="http://dx.doi.org/10.1039/C9TB90141H",
+abstract  ="Our 2019 Emerging Investigators themed issues gather some of the best research being conducted by scientists in the early stages of their independent career. Each contributor was recommended as carrying out work with the potential to influence future directions in materials chemistry. Congratulations to all of the researchers featured{,} we hope you enjoy reading this issue."}
+@article{cayer2019rheological,
+  title={Rheological Properties of Liquids Under Conditions of Elastohydrodynamic Lubrication},
+  author={Cayer-Barrioz, Juliette},
+  journal={Tribology \& Lubrication Technology},
+  volume={75},
+  number={7},
+  pages={53--53},
+  year={2019},
+  publisher={Society of Tribologists and Lubrication Engineers}
+}
+
+%machine learning in science
+%%reviews
+
+@article{mehta2019high,
+  title={A high-bias, low-variance introduction to machine learning for physicists},
+  author={Mehta, Pankaj and Bukov, Marin and Wang, Ching-Hao and Day, Alexandre GR and Richardson, Clint and Fisher, Charles K and Schwab, David J},
+  journal={Physics reports},
+  year={2019},
+  publisher={Elsevier}
+}
+
+%key papers
+@inproceedings{schoenholz2018combining,
+  title={Combining machine learning and physics to understand glassy systems},
+  author={Schoenholz, Samuel S},
+  booktitle={Journal of Physics: Conference Series},
+  volume={1036},
+  number={1},
+  pages={012021},
+  year={2018},
+  organization={IOP Publishing}
+}
+@article{landes2020attractive,
+  title={Attractive versus truncated repulsive supercooled liquids: The dynamics is encoded in the pair correlation function},
+  author={Landes, Fran{\c{c}}ois P and Biroli, Giulio and Dauchot, Olivier and Liu, Andrea J and Reichman, David R},
+  journal={Physical Review E},
+  volume={101},
+  number={1},
+  pages={010602},
+  year={2020},
+  publisher={APS}
+}
+@article{ward2018machine,
+  title={A machine learning approach for engineering bulk metallic glass alloys},
+  author={Ward, Logan and O'Keeffe, Stephanie C and Stevick, Joseph and Jelbert, Glenton R and Aykol, Muratahan and Wolverton, Chris},
+  journal={Acta Materialia},
+  volume={159},
+  pages={102--111},
+  year={2018},
+  publisher={Elsevier}
+}
+@article{melko2017,
+  title = {Machine Learning Phases of Strongly Correlated Fermions},
+  author = {Ch'ng, Kelvin and Carrasquilla, Juan and Melko, Roger G. and Khatami, Ehsan},
+  journal = {Phys. Rev. X},
+  volume = {7},
+  issue = {3},
+  pages = {031038},
+  numpages = {9},
+  year = {2017},
+  month = {Aug},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevX.7.031038}
+}
+
+@article{glotzer2017,
+  title={Machine learning for crystal identification and discovery},
+  author={Spellings, Matthew and Glotzer, Sharon C},
+  journal={AIChE Journal},
+  volume={64},
+  number={6},
+  pages={2198--2206},
+  year={2018},
+  publisher={Wiley Online Library},
+  url={https://onlinelibrary.wiley.com/doi/full/10.1002/aic.16157}
+}
+@article{hase2017machine,
+  title={Machine learning for quantum dynamics: deep learning of excitation energy transfer properties},
+  author={H{\"a}se, Florian and Kreisbeck, Christoph and Aspuru-Guzik, Al{\'a}n},
+  journal={Chemical science},
+  volume={8},
+  number={12},
+  pages={8419--8426},
+  year={2017},
+  publisher={Royal Society of Chemistry}
+}
+@article{sam2017,
+  author={Samuel S. Schoenholz},
+  title={Combining Machine Learning and Physics to Understand Glassy Systems},
+  journal={Journal of Physics: Conference Series},
+  volume={1036},
+  number={1},
+  pages={012021},
+  year={2018}
+}
+
+@article{wang2017mesoscale,
+  title={Mesoscale simulation and machine learning of asphaltene aggregation phase behavior and molecular assembly landscapes},
+  author={Wang, Jiang and Gayatri, Mohit A and Ferguson, Andrew L},
+  journal={The Journal of Physical Chemistry B},
+  volume={121},
+  number={18},
+  pages={4923--4944},
+  year={2017},
+  publisher={ACS Publications},
+  url={https://pubs.acs.org/doi/abs/10.1021/acs.jpcb.7b02574}
+}
+@article{moradzadeh2019molecular,
+  title={Molecular Dynamics Properties without the Full Trajectory: A Denoising Autoencoder Network for Properties of Simple Liquids},
+  author={Moradzadeh, Alireza and Aluru, Narayana R},
+  journal={The journal of physical chemistry letters},
+  volume={10},
+  number={24},
+  pages={7568--7576},
+  year={2019},
+  publisher={ACS Publications}
+}
+
+
+%ml infrastructure
+
+@Article{aspuru2019,
+author ="Häse, Florian and Fdez. Galván, Ignacio and Aspuru-Guzik, Alán and Lindh, Roland and Vacher, Morgane",
+title  ="How machine learning can assist the interpretation of ab initio molecular dynamics simulations and conceptual understanding of chemistry",
+journal  ="Chem. Sci.",
+year  ="2019",
+volume  ="10",
+issue  ="8",
+pages  ="2298-2307",
+publisher  ="The Royal Society of Chemistry",
+doi  ="10.1039/C8SC04516J",
+url  ="http://dx.doi.org/10.1039/C8SC04516J",
+abstract  ="Molecular dynamics simulations are often key to the understanding of the mechanism{,} rate and yield of chemical reactions. One current challenge is the in-depth analysis of the large amount of data produced by the simulations{,} in order to produce valuable insight and general trends. In the present study{,} we propose to employ recent machine learning analysis tools to extract relevant information from simulation data without a priori knowledge on chemical reactions. This is demonstrated by training machine learning models to predict directly a specific outcome quantity of ab initio molecular dynamics simulations – the timescale of the decomposition of 1{,}2-dioxetane. The machine learning models accurately reproduce the dissociation time of the compound. Keeping the aim of gaining physical insight{,} it is demonstrated that{,} in order to make accurate predictions{,} the models evidence empirical rules that are{,} today{,} part of the common chemical knowledge. This opens the way for conceptual breakthroughs in chemistry where machine analysis would provide a source of inspiration to humans."}
+@article{kasim2020up,
+  title={Up to two billion times acceleration of scientific simulations with deep neural architecture search},
+  author={Kasim, MF and Watson-Parris, D and Deaconu, L and Oliver, S and Hatfield, P and Froula, DH and Gregori, G and Jarvis, M and Khatiwala, S and Korenaga, J and others},
+  journal={arXiv preprint arXiv:2001.08055},
+  year={2020}
+}
+%#################
+@inproceedings{battaglia2016interaction,
+  title={Interaction networks for learning about objects, relations and physics},
+  author={Battaglia, Peter and Pascanu, Razvan and Lai, Matthew and Rezende, Danilo Jimenez and others},
+  booktitle={Advances in neural information processing systems},
+  pages={4502--4510},
+  year={2016}
+}
+
+@article{chang2016compositional,
+  title={A compositional object-based approach to learning physical dynamics},
+  author={Chang, Michael B and Ullman, Tomer and Torralba, Antonio and Tenenbaum, Joshua B},
+  journal={arXiv preprint arXiv:1612.00341},
+  year={2016}
+}
+
+@article{rupp2012fast,
+  title={Fast and accurate modeling of molecular atomization energies with machine learning},
+  author={Rupp, Matthias and Tkatchenko, Alexandre and M{\"u}ller, Klaus-Robert and Von Lilienfeld, O Anatole},
+  journal={Physical review letters},
+  volume={108},
+  number={5},
+  pages={058301},
+  year={2012},
+  publisher={APS}
+}
+
+@article{chmiela2017machine,
+  title={Machine learning of accurate energy-conserving molecular force fields},
+  author={Chmiela, Stefan and Tkatchenko, Alexandre and Sauceda, Huziel E and Poltavsky, Igor and Sch{\"u}tt, Kristof T and M{\"u}ller, Klaus-Robert},
+  journal={Science advances},
+  volume={3},
+  number={5},
+  pages={e1603015},
+  year={2017},
+  publisher={American Association for the Advancement of Science}
+}
+
+@article{raissi2018hidden,
+  title={Hidden physics models: Machine learning of nonlinear partial differential equations},
+  author={Raissi, Maziar and Karniadakis, George Em},
+  journal={Journal of Computational Physics},
+  volume={357},
+  pages={125--141},
+  year={2018},
+  publisher={Elsevier}
+}
+
+@article{raissi2018multistep,
+  title={Multistep neural networks for data-driven discovery of nonlinear dynamical systems},
+  author={Raissi, Maziar and Perdikaris, Paris and Karniadakis, George Em},
+  journal={arXiv preprint arXiv:1801.01236},
+  year={2018}
+}
+
+@article{long2017pde,
+  title={PDE-net: Learning PDEs from data},
+  author={Long, Zichao and Lu, Yiping and Ma, Xianzhong and Dong, Bin},
+  journal={arXiv preprint arXiv:1710.09668},
+  year={2017}
+}
+
+@article{shin2020convergence,
+  title={On the Convergence and generalization of Physics Informed Neural Networks},
+  author={Shin, Yeonjong and Darbon, Jerome and Karniadakis, George Em},
+  journal={arXiv preprint arXiv:2004.01806},
+  year={2020}
+}
+
+@article{tronarp2020bayesian,
+  title={Bayesian ODE Solvers: The Maximum A Posteriori Estimate},
+  author={Tronarp, Filip and Sarkka, Simo and Hennig, Philipp},
+  journal={arXiv preprint arXiv:2004.00623},
+  year={2020}
+}
+
+%############################Integrator Refs or RNN Many partcle#################################
+@article{shen2020deep,
+  title={Deep Euler method: solving ODEs by approximating the local truncation error of the Euler method},
+  author={Shen, Xing and Cheng, Xiaoliang and Liang, Kewei},
+  journal={arXiv preprint arXiv:2003.09573},
+  year={2020}
+}
+
+@article{greydanus2019hamiltonian,
+  title={Hamiltonian Neural Networks},
+  author={Greydanus, Sam and Dzamba, Misko and Yosinski, Jason},
+  journal={arXiv preprint arXiv:1906.01563},
+  year={2019}
+}
+
+@article{chen2019symplectic,
+  title={Symplectic Recurrent Neural Networks},
+  author={Chen, Zhengdao and Zhang, Jianyu and Arjovsky, Martin and Bottou, L{\'e}on},
+  journal={arXiv preprint arXiv:1909.13334},
+  year={2019}
+}
+
+@article{toth2019hamiltonian,
+  title={Hamiltonian Generative Networks},
+  author={Toth, Peter and Rezende, Danilo Jimenez and Jaegle, Andrew and Racani{\`e}re, S{\'e}bastien and Botev, Aleksandar and Higgins, Irina},
+  journal={arXiv preprint arXiv:1909.13789},
+  year={2019}
+}
+
+
+@article{sanchez2019hamiltonian,
+  title={Hamiltonian Graph Networks with ODE Integrators},
+  author={Sanchez-Gonzalez, Alvaro and Bapst, Victor and Cranmer, Kyle and Battaglia, Peter},
+  journal={arXiv preprint arXiv:1909.12790},
+  year={2019}
+}
+
+@article{bussi2007accurate,
+  title={Accurate sampling using Langevin dynamics},
+  author={Bussi, Giovanni and Parrinello, Michele},
+  journal={Physical Review E},
+  volume={75},
+  number={5},
+  pages={056707},
+  year={2007},
+  publisher={APS}
+}
+
+@article{breen2019newton,
+  title={Newton vs the machine: solving the chaotic three-body problem using deep neural networks},
+  author={Breen, Philip G and Foley, Christopher N and Boekholt, Tjarda and Zwart, Simon Portegies},
+  journal={arXiv preprint arXiv:1910.07291},
+  year={2019}
+}
+
+@article{cranmer2020lagrangian,
+  title={Lagrangian Neural Networks},
+  author={Cranmer, Miles and Greydanus, Sam and Hoyer, Stephan and Battaglia, Peter and Spergel, David and Ho, Shirley},
+  journal={arXiv preprint arXiv:2003.04630},
+  year={2020}
+}
+
+@article{qin2019data,
+  title={Data driven governing equations approximation using deep neural networks},
+  author={Qin, Tong and Wu, Kailiang and Xiu, Dongbin},
+  journal={Journal of Computational Physics},
+  volume={395},
+  pages={620--635},
+  year={2019},
+  publisher={Elsevier}
+}
+
+@article{wang2018deepmd,
+  title={DeePMD-kit: A deep learning package for many-body potential energy representation and molecular dynamics},
+  author={Wang, Han and Zhang, Linfeng and Han, Jiequn and Weinan, E},
+  journal={Computer Physics Communications},
+  volume={228},
+  pages={178--184},
+  year={2018},
+  publisher={Elsevier}
+}
+
+@article{schutt2018schnet,
+  title={SchNet--A deep learning architecture for molecules and materials},
+  author={Sch{\"u}tt, Kristof T and Sauceda, Huziel E and Kindermans, P-J and Tkatchenko, Alexandre and M{\"u}ller, K-R},
+  journal={The Journal of Chemical Physics},
+  volume={148},
+  number={24},
+  pages={241722},
+  year={2018},
+  publisher={AIP Publishing LLC}
+}
+
+@inproceedings{endo2018multi,
+  title={Multi-step time series generator for molecular dynamics},
+  author={Endo, Katsuhiro and Tomobe, Katsufumi and Yasuoka, Kenji},
+  booktitle={Thirty-Second AAAI Conference on Artificial Intelligence},
+  year={2018}
+}
+
+@inproceedings{chen2018neural,
+  title={Neural ordinary differential equations},
+  author={Chen, Tian Qi and Rubanova, Yulia and Bettencourt, Jesse and Duvenaud, David K},
+  booktitle={Advances in neural information processing systems},
+  pages={6571--6583},
+  year={2018}
+}
+
+@book{frenkel,
+  added-at = {2010-07-14T11:29:46.000+0200},
+  asin = {0122673514},
+  author = {Frenkel, Daan and Smit, Berend},
+  biburl = {http://www.bibsonomy.org/bibtex/27287e00942059afb3a77e17d28441e5e/lopusz},
+  description = {Amazon.com: Understanding Molecular Simulation, Second Edition: From Algorithms to Applications (Computational Science Series, Vol 1) (9780122673511): Daan Frenkel, Berend Smit: Books},
+  dewey = {539.60113},
+  ean = {9780122673511},
+  edition = 2,
+  interhash = {59afba3d8b2cda7f3a80a6f294c5c7d9},
+  intrahash = {7287e00942059afb3a77e17d28441e5e},
+  isbn = {0122673514},
+  keywords = {molecular_modelling},
+  publisher = {Academic Press},
+  timestamp = {2010-07-14T11:29:46.000+0200},
+  title = {Understanding Molecular Simulation},
+  url = {http://www.amazon.com/Understanding-Molecular-Simulation-Second-Computational/dp/0122673514/ref=sr_1_1?ie=UTF8&s=books&qid=1279099722&sr=1-1},
+  year = 2001
+}
+@article{glotzer2015assembly,
+  title={Assembly engineering: Materials design for the 21st century (2013 PV Danckwerts lecture)},
+  author={Glotzer, Sharon C},
+  journal={Chemical Engineering Science},
+  volume={121},
+  pages={3--9},
+  year={2015},
+  publisher={Elsevier}
+}
+@article{hadden2018all,
+  title={All-atom molecular dynamics of the HBV capsid reveals insights into biological function and cryo-EM resolution limits},
+  author={Hadden, Jodi A and Perilla, Juan R and Schlicksup, Christopher John and Venkatakrishnan, Balasubramanian and Zlotnick, Adam and Schulten, Klaus},
+  journal={Elife},
+  volume={7},
+  pages={e32478},
+  year={2018},
+  publisher={eLife Sciences Publications Limited}
+}
+@article{beckstein2004not,
+  title={Not ions alone: barriers to ion permeation in nanopores and channels},
+  author={Beckstein, Oliver and Tai, Kaihsu and Sansom, Mark SP},
+  journal={Journal of the American Chemical Society},
+  volume={126},
+  number={45},
+  pages={14694--14695},
+  year={2004},
+  publisher={ACS Publications}
+}
+@article{qiao2004charge,
+  title={Charge inversion and flow reversal in a nanochannel electro-osmotic flow},
+  author={Qiao, R and Aluru, Narayana R},
+  journal={Physical review letters},
+  volume={92},
+  number={19},
+  pages={198301},
+  year={2004},
+  publisher={APS}
+}
