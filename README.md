@@ -26,7 +26,7 @@ JCS Kadupitiya, Geoffrey C. Fox, Vikram Jadhao | 2020
 <br />
 
 * Overview of the deep learning approach:
-<br />
+
 ![overall-idea](figures/fig2.jpg)
 
 * RNN-MD architecture:
