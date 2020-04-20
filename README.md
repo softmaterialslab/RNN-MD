@@ -26,8 +26,8 @@ JCS Kadupitiya, Geoffrey C. Fox, Vikram Jadhao | 2020
  * 16 particle in a spherical hard wall simulation: 
    ![16-LJ-SP](figures/16-SP.gif)
  
-* Overview of the deep learning approach
+* Overview of the deep learning approach:
   ![overall-idea](figures/fig2.jpg)
 
-* RNN-MD architecture
-  <img src="figures/fig1.jpg" width="250">
+* RNN-MD architecture:
+  <img src="figures/fig1.jpg" width="500">
