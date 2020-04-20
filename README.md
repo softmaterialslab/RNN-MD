@@ -17,6 +17,30 @@ JCS Kadupitiya, Geoffrey C. Fox, Vikram Jadhao | 2020
 }
 ```
 
+
+Directory Structure
+------
+    .
+    ├── data                 # All the datafiles for experiments are here, read the readme inside
+    ├── figures              # Main fugures are here
+    ├── models               # Pretrained LSTM models are here
+    ├── paper                # latex files for the paper
+    ├── scripts              # Supporting python scripts for MD-visualization
+    └── src                  # Codes needed to run RNN-MD
+        ├── config           # All the configurations for RNN models are in YAML files
+        ├── md-codes         # MD codes in python and c++
+        ├── model            # Main codebase for RNN-MD
+        ├── paper-figures    # Python notebooks used to generate the figures for the paper
+        ├── spec.._local     # Python notebook version of the RNN-MD 
+        ├── spec.._colab     # google colab notebook version of the RNN-MD 
+        ├── temp_data        # temporary data folders for visualization
+        ├── DW-Ex..ipynb     # Double well experiment
+        ├── LJ-Ex..ipynb     # Lennord Jones experiment
+        ├── Ru.-Ex..ipynb    # Rugged potential experiment
+        ├── SHO-Ex..ipynb    # SHO experiment        
+        ├── Ma.-Ex..ipynb    # Many particle PB experiment        
+
+
 * Example simulations with LJ potentail, 16 particle in a periodic boundary simulation:
 <img src="figures/16-PB.gif" alt="16-LJ-PB" width="450">
 <br />
