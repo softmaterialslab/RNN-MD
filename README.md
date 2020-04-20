@@ -20,6 +20,7 @@ JCS Kadupitiya, Geoffrey C. Fox, Vikram Jadhao | 2020
 * Example simulations with LJ potentail
     * 16 particle in a periodic boundary simulation:       
 <br />
+<img src="figures/16-PB.gif" width="450">
 ![16-LJ-PB](figures/16-PB.gif)
 <br />
     
