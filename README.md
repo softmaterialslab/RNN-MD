@@ -19,16 +19,12 @@ JCS Kadupitiya, Geoffrey C. Fox, Vikram Jadhao | 2020
 
 * Example simulations with LJ potentail
     * 16 particle in a periodic boundary simulation:       
+<img src="figures/16-PB.gif" alt="16-LJ-PB" width="450">
 <br />
-<img src="figures/16-PB.gif" width="450">
-![16-LJ-PB](figures/16-PB.gif)
-<br />
-    
     * 16 particle in a spherical hard wall simulation: 
-        ![16-LJ-SP](figures/16-SP.gif)
+<img src="figures/16-SP.gif" alt="16-LJ-SP" width="450">
 <br />
-<br />
- 
+
 * Overview of the deep learning approach:
   ![overall-idea](figures/fig2.jpg)
 
