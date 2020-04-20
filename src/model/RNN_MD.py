@@ -92,10 +92,59 @@ class RNN_MD(tf.Module):
 		
 		self.train_test_split_ = int(self.input_data_suff.shape[0]*self.train_test_split)
 
-		self.x_train = self.input_data_suff[0:self.train_test_split_].reshape(-1,self.window_size,1)
-		self.x_test = self.input_data_suff[self.train_test_split_:].reshape(-1,self.window_size,1)
-		self.y_train = self.output_suff[0:self.train_test_split_].reshape(-1,1)
-		self.y_test = self.output_suff[self.train_test_split_:].reshape(-1,1)
+		self.x_train = self.input_data_suff[0:self.train_test_split_].reshape(-1,self.window_size,self.input_features)
+		self.x_test = self.input_data_suff[self.train_test_split_:].reshape(-1,self.window_size,self.input_features)
+		self.y_train = self.output_suff[0:self.train_test_split_].reshape(-1,self.output_shape)
+		self.y_test = self.output_suff[self.train_test_split_:].reshape(-1,self.output_shape)
+
+		print("input: ", self.input_data_suff.shape)
+		print("Output", self.output_suff.shape)
+		print("Train input: ", self.x_train.shape)
+		print("Train Output", self.y_train.shape)
+		print("Test input: ", self.x_test.shape)
+		print("Test Output", self.y_test.shape)
+
+		self.dataset = tf.data.Dataset.from_tensor_slices((self.x_train, self.y_train))
+		self.dataset = self.dataset.shuffle(20).batch(self.batchSize)
+
+	def load_many_particle_data(self):
+		"""
+		Class for the Training and testing LSTM model
+		"""
+		with open(self.dataset_dir+self.dataset_name, 'rb') as handle:
+		    (self.input_list, self.all_data, self.training_indexes, self.testing_indexes) = pickle.load(handle)
+
+		print("Total # of simulation:" +str(len(self.input_list)))
+		print(self.all_data.shape)
+		print(len(self.training_indexes))
+		print(len(self.testing_indexes))
+
+		self.input_data = []
+		self.output = []
+
+
+		for sim_ in self.training_indexes[0:self.selected_training_count]:
+		  selected_data = self.all_data[sim_][::self.reduction_factor]  # 6 referes to actual cos solution
+		  for i in range(self.window_size, selected_data.shape[0]):
+		        self.input_data.append(selected_data[(i-self.window_size):i])
+		        self.output.append(selected_data[i])
+
+		
+		self.input_data = np.array(self.input_data)
+		self.output = np.array(self.output)
+		print(self.input_data.shape)
+		print(self.output.shape)
+
+
+		self.input_data_suff, self.output_suff  = shuffle(self.input_data, self.output)
+
+		
+		self.train_test_split_ = int(self.input_data_suff.shape[0]*self.train_test_split)
+
+		self.x_train = self.input_data_suff[0:self.train_test_split_].reshape(-1,self.window_size,self.input_features)
+		self.x_test = self.input_data_suff[self.train_test_split_:].reshape(-1,self.window_size,self.input_features)
+		self.y_train = self.output_suff[0:self.train_test_split_].reshape(-1,self.output_shape)
+		self.y_test = self.output_suff[self.train_test_split_:].reshape(-1,self.output_shape)
 
 		print("input: ", self.input_data_suff.shape)
 		print("Output", self.output_suff.shape)
@@ -234,7 +283,7 @@ class RNN_MD(tf.Module):
 		self.predicted_output = []
 
 		for i in range(self.window_size, selected_data.shape[0]):
-		  self.predicted_output.append(self.predict(selected_data[(i-self.window_size):i].reshape(-1, self.window_size, 1)))
+		  self.predicted_output.append(self.predict(selected_data[(i-self.window_size):i].reshape(-1, self.window_size, self.input_features)))
 		  self.actual_output.append(selected_data[i])
 
 		self.actual_output = np.array(self.actual_output)
@@ -247,7 +296,7 @@ class RNN_MD(tf.Module):
 		temp__ = np.append(temp__, self.predicted_output, axis=0)
 
 		for i in range(self.window_size, selected_data.shape[0]):
-		  self.Only_RNN_predicted_output.append(self.predict(temp__[(i-self.window_size):i].reshape(-1, self.window_size, 1)))
+		  self.Only_RNN_predicted_output.append(self.predict(temp__[(i-self.window_size):i].reshape(-1, self.window_size, self.input_features)))
 
 		self.Only_RNN_predicted_output = np.array(self.Only_RNN_predicted_output).reshape(-1)
 
@@ -256,3 +305,59 @@ class RNN_MD(tf.Module):
 		print(self.predicted_output.shape)
 		print(self.Only_RNN_predicted_output.shape)
 		#print(predicted_output)
+
+
+	def simulate_new_many_particle(self, testing_index=1):
+		#sim_ =training_indexes[0]
+		self.sim_ =self.testing_indexes[testing_index]
+
+		selected_data = self.all_data[self.sim_][::self.reduction_factor]
+
+		self.actual_output = []
+		self.predicted_output = []
+
+		for i in range(self.window_size, selected_data.shape[0]):
+		  self.predicted_output.append(self.predict(selected_data[(i-self.window_size):i].reshape(-1, self.window_size, self.input_features)))
+		  self.actual_output.append(selected_data[i])
+
+		self.actual_output = np.array(self.actual_output)
+		self.predicted_output = np.array(self.predicted_output).reshape(-1,selected_data.shape[1], selected_data.shape[2])
+
+		print("Actual data shape: "+str(self.actual_output.shape))
+		print("Predicted data shape: "+str(self.predicted_output.shape))
+		#print(predicted_output)
+
+		self.make_movie(file_name='actual.lammpstrj', data=self.actual_output)
+		self.make_movie(file_name='predicted.lammpstrj', data=self.predicted_output)
+
+  
+	def make_movie(self, file_name = '', data =None):
+
+		lx=6.0
+		ly=6.0
+		lz=6.0
+
+		#path = os.getcwd()
+		#print(path)
+		temp_dir = 'temp_data/'
+
+		for num in range(data.shape[0]):
+			if num==0:
+				outdump = open(temp_dir+file_name, "w")
+			else:
+				outdump = open(temp_dir+file_name, "a")
+	    
+			outdump.write("ITEM: TIMESTEP\n")
+			outdump.write("{}\n".format(num - 1))
+			outdump.write("ITEM: NUMBER OF ATOMS\n")
+			outdump.write("{}\n".format(data.shape[1]))
+			outdump.write("ITEM: BOX BOUNDS\n")
+			outdump.write("{}\t{}\n".format(-0.5*lx, 0.5*lx))
+			outdump.write("{}\t{}\n".format(-0.5*lx, 0.5*ly))
+			outdump.write("{}\t{}\n".format(-0.5*lz, 0.5*lz))
+			outdump.write("ITEM: ATOMS index type x y z v\n")
+
+			for j in range(data.shape[1]):
+				outdump.write("{}\t{}\t{}\t{}\t{}\t{}\n".format(j+1, "1", data[num][j][0], data[num][j][1], data[num][j][2], 0)) 
+			outdump.close()
+      

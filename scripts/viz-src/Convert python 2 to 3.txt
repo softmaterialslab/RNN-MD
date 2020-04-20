@@ -1,7 +1,0 @@
-# Convert to python 3
-pip install lib2to3 
-python -m lib2to3 -w dump3.py
-
-# remove un consistant tabs
-pip install autopep8
-autopep8 --in-place --aggressive --aggressive dump3.py

@@ -8,6 +8,7 @@ import time
 import tensorflow as tf
 import yaml
 import sys
+import os
 tf.keras.backend.set_floatx('float64')
 ## Fix for Fail to find the dnn implementation
 #physical_devices = tf.config.list_physical_devices('GPU')
