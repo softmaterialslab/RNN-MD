@@ -1,0 +1,38 @@
+---
+base_dir: src/model
+experiment: SHO
+log_level: INFO
+data:
+  batchSize: 128
+  dataset_dir: ../data/
+  dataset_name: sho_2T_dt=0.001.pk
+  test_batch_size: 64
+  val_batch_size: 64
+  input_features: 1
+  output_shape: 1
+  window_size: 5
+  reduction_factor: 10
+  selection_index: 6
+  train_test_split: 0.80
+  selected_training_count: 50
+
+model:
+  saved_models_dir: ../models/
+  saved_models_name: SHO.HDF5
+  lstmUnits1: 32
+  lstmUnits2: 32
+
+train:
+  epochs: 1000
+  dropout_rate: 0.1
+  learning_rate: 0.001
+  epsilon: 1.0e-3
+  global_step: 0
+  lr_decay_ratio: 0.1
+  max_grad_norm: 5
+  max_to_keep: 100
+  min_learning_rate: 2.0e-06
+  optimizer: adam
+  patience: 50
+  steps: [10, 40, 100, 400]
+  test_every_n_epochs: 10
