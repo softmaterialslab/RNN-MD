@@ -40,6 +40,12 @@ Directory Structure
         ├── SHO-Ex..ipynb    # SHO experiment        
         ├── Ma.-Ex..ipynb    # Many particle PB experiment        
 
+Example Model Training and Testing
+------
+
+
+Example results for 16 particle periodic boundry simulation
+------
 
 * Example simulations with LJ potentail, 16 particle in a periodic boundary simulation:
 <img src="figures/16-PB.gif" alt="16-LJ-PB" width="450">
@@ -48,6 +54,10 @@ Directory Structure
 * Example simulations with LJ potentail, 16 particle in a spherical hard wall simulation: 
 <img src="figures/16-SP.gif" alt="16-LJ-SP" width="450">
 <br />
+
+
+Architecture Figures
+------
 
 * Overview of the deep learning approach:
 
