@@ -30,4 +30,4 @@ JCS Kadupitiya, Geoffrey C. Fox, Vikram Jadhao | 2020
   ![overall-idea](figures/fig2.jpg)
 
 * RNN-MD architecture
-  ![RNN-MD](figures/fig1.jpg =250x)
+  ![RNN-MD](figures/fig1.jpg=250x)
