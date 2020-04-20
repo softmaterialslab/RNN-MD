@@ -43,6 +43,9 @@ Directory Structure
 Example Model Training and Testing
 ------
 
+* First, git clone the project:
+```git clone https://github.com/softmaterialslab/RNN-MD.git```
+* Next, go to ```src``` directory and run the following in a ```python 3``` environment.
 * If you want to change any configuration, please edit the ```src/config/SHO.yaml``` file.
 * Then, load the module and load configuration from SHO.yaml file.
 ```
