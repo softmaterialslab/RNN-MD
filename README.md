@@ -43,6 +43,38 @@ Directory Structure
 Example Model Training and Testing
 ------
 
+* First, git clone the project:
+```git clone https://github.com/softmaterialslab/RNN-MD.git```
+* If you want to change any configuration, please edit the ```src/config/SHO.yaml``` file.
+* Then, load the module and load configuration from SHO.yaml file.
+```
+from model.RNN_MD import RNN_MD
+rnn_md = RNN_MD(experiment='sho')
+```
+* Next, load dataset:
+ ```rnn_md.load_data()```
+* Then, train and save the model:
+```
+rnn_md.train()
+rnn_md.save_model()
+```
+* Similary, if you have a pretrained model in ```model``` directory, load it as follows:
+```rnn_md.load_model()```
+* Then use the model to run a RNN-MD simulation:
+```
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+rnn_md.simulate_new(testing_index=1)
+
+fig=plt.figure(figsize=(16, 6))
+plt.title(rnn_md.input_list[rnn_md.sim_])
+plt.plot(rnn_md.actual_output,'r+', label='MD_dynamics', linewidth=1, markersize=3, linestyle='dashed')
+plt.plot(rnn_md.predicted_output, label='MD-RNN')
+plt.plot(rnn_md.Only_RNN_predicted_output, label='continous RNN')
+plt.legend()
+```
+* All the experiments canbe run using similar setup, please check notebooks available in ```src``` directory.
 
 Example results for 16 particle periodic boundry simulation
 ------
