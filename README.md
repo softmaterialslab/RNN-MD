@@ -38,7 +38,12 @@ Directory Structure
         ├── LJ-Ex..ipynb     # Lennord Jones experiment
         ├── Ru.-Ex..ipynb    # Rugged potential experiment
         ├── SHO-Ex..ipynb    # SHO experiment        
-        ├── Ma.-Ex..ipynb    # Many particle PB experiment        
+        ├── Ma.-Ex..ipynb    # Many particle PB experiment 
+        
+* Note: We encourage the use of notebooks at source level (```src```) compared to the notebooks at ```src/spec..```.
+    * This is because the notebooks at the src level demonstrate how to use the model with ```src/model``` code which uses one code base for all the experiments with different configuration files (```src/config```).
+    * On the other hand, the notebooks which are at ```src/spec..```, are standalone notebook versions of ```src/model```.
+    * The following example explains the 1st way as it is much easier to understand.
 
 Example Model Training and Testing
 ------
