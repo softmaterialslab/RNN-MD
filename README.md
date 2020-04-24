@@ -43,7 +43,7 @@ Directory Structure
 * Note: We encourage the use of notebooks at source level (```src```) compared to the notebooks at ```src/spec..```.
     * This is because the notebooks at the src level demonstrate how to use the model with ```src/model``` code which uses one code base for all the experiments with different configuration files (```src/config```).
     * On the other hand, the notebooks which are at ```src/spec..```, are standalone notebook versions of ```src/model```.
-    * The following example explains the 1st way as it is much easier to understand.
+    * The following example explains the use of ource level (```src```) notebooks as it is much easier to understand.
 
 Example Model Training and Testing
 ------
